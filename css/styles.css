@@ -66,8 +66,8 @@ em { font-style: italic; }
 /* ---------- Header ----------
    Solid black at the top of the page. Once the page scrolls,
    main.js adds .is-scrolled and it turns to frosted glass. */
-.site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; -webkit-transform: translateZ(0); transform: translateZ(0); background: #3A3835; color: var(--bone); border-bottom: 1px solid #3A3835; transition: background-color .35s ease, border-color .35s ease; }
-.site-header.is-scrolled { background: rgba(58,56,53,.6); border-bottom-color: rgba(241,235,223,.1); -webkit-backdrop-filter: blur(20px) saturate(1.4); backdrop-filter: blur(20px) saturate(1.4); }
+.site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; -webkit-transform: translateZ(0); transform: translateZ(0); background: #343230; color: var(--bone); border-bottom: 1px solid #343230; transition: background-color .35s ease, border-color .35s ease; }
+.site-header.is-scrolled { background: rgba(52,50,48,.6); border-bottom-color: rgba(241,235,223,.1); -webkit-backdrop-filter: blur(20px) saturate(1.4); backdrop-filter: blur(20px) saturate(1.4); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 24px; padding-bottom: 24px; }
 .wordmark { font-size: 20px; font-weight: 800; letter-spacing: -.01em; line-height: 1.05; text-decoration: none; color: var(--ink); }
 .wordmark:hover { color: var(--ink); }
@@ -220,7 +220,7 @@ em { font-style: italic; }
 .footer-bottom { margin-top: 64px; border-top: 1px solid #3A3A3A; padding-top: 24px; font-size: 14px; color: var(--stone); }
 
 /* ---------- Survey nudge ---------- */
-.nudge { position: fixed; right: 24px; bottom: 24px; z-index: 40; width: 380px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 14px 12px; padding: 20px 20px 20px 24px; background: rgba(58,56,53,.92); color: var(--bone); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: 0 12px 40px rgba(20,20,20,.25); transform: translateY(calc(100% + 40px)); opacity: 0; transition: transform .45s cubic-bezier(.2,.7,.2,1), opacity .3s ease; }
+.nudge { position: fixed; right: 24px; bottom: 24px; z-index: 40; width: 380px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 14px 12px; padding: 20px 20px 20px 24px; background: rgba(52,50,48,.92); color: var(--bone); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: 0 12px 40px rgba(20,20,20,.25); transform: translateY(calc(100% + 40px)); opacity: 0; transition: transform .45s cubic-bezier(.2,.7,.2,1), opacity .3s ease; }
 .nudge[hidden] { display: none; }
 .nudge.is-shown { transform: none; opacity: 1; }
 .nudge-text { grid-column: 1; font-family: var(--serif); font-size: 24px; line-height: 1.1; letter-spacing: -.01em; }
@@ -247,7 +247,7 @@ em { font-style: italic; }
   .menu-btn .icon-close { display: none; }
   .menu-btn[aria-expanded="true"] .icon-open { display: none; }
   .menu-btn[aria-expanded="true"] .icon-close { display: block; }
-  .site-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; background: #3A3835; border-bottom: 1px solid #3A3835; padding: 8px 20px 20px; font-size: 18px; font-weight: 600; }
+  .site-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; background: #343230; border-bottom: 1px solid #343230; padding: 8px 20px 20px; font-size: 18px; font-weight: 600; }
   .site-nav.is-open { display: flex; }
   .site-nav a { padding: 16px 0; border-bottom: 1px solid rgba(241,235,223,.15); }
   .site-nav .nav-cta { margin-top: 16px; text-align: center; padding: 18px; border: 0; background: var(--red); }

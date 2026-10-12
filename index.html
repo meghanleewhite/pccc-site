@@ -24,9 +24,9 @@
 
 <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/styles.css?v=202610120950">
+<link rel="stylesheet" href="/css/styles.css?v=202610120952">
 <script>document.documentElement.classList.add('js')</script>
-<script src="/js/main.js?v=202610120950" defer></script>
+<script src="/js/main.js?v=202610120952" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -257,6 +257,15 @@
   </section>
 
 </main>
+
+<!-- Survey nudge: slides up after the hero, hides near the survey, can be dismissed -->
+<aside class="nudge" id="nudge" aria-label="Take the survey" hidden>
+  <p class="nudge-text">Been to a Canadian ER for psychiatric care?</p>
+  <a class="btn btn-red nudge-btn" href="#survey">Take the survey →</a>
+  <button class="nudge-close" type="button" aria-label="Dismiss">
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg>
+  </button>
+</aside>
 
 <!-- 9 FOOTER -->
 <footer class="site-footer">

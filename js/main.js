@@ -144,6 +144,34 @@
     }, { passive: true });
   }
 
+  // ---------- Survey nudge ----------
+  // Appears once the visitor scrolls past the hero. Hides while the survey
+  // section is on screen. Dismissing it keeps it away for 14 days.
+  var nudge = document.getElementById('nudge');
+  var hero = document.querySelector('.hero');
+  var survey = document.getElementById('survey');
+  if (nudge && hero && survey && 'IntersectionObserver' in window) {
+    var KEY = 'pccc-nudge-dismissed';
+    var dismissed = false;
+    try {
+      var t = parseInt(localStorage.getItem(KEY) || '0', 10);
+      dismissed = t && (Date.now() - t) < 14 * 864e5;
+    } catch (err) {}
+    if (!dismissed) {
+      nudge.hidden = false;
+      var pastHero = false, surveyInView = false;
+      var render = function () { nudge.classList.toggle('is-shown', pastHero && !surveyInView); };
+      new IntersectionObserver(function (es) { pastHero = !es[0].isIntersecting && es[0].boundingClientRect.top < 0; render(); }).observe(hero);
+      new IntersectionObserver(function (es) { surveyInView = es[0].isIntersecting; render(); }, { threshold: 0.15 }).observe(survey);
+      var hide = function () { nudge.classList.remove('is-shown'); setTimeout(function () { nudge.hidden = true; }, 450); };
+      nudge.querySelector('.nudge-close').addEventListener('click', function () {
+        try { localStorage.setItem(KEY, String(Date.now())); } catch (err) {}
+        hide();
+      });
+      nudge.querySelector('.nudge-btn').addEventListener('click', function () { surveyInView = true; render(); });
+    }
+  }
+
   // ---------- Footer year ----------
   var year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();

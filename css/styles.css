@@ -5,7 +5,7 @@
 /* ---------- Fonts (self-hosted, no third-party requests) ---------- */
 @font-face { font-family: "Instrument Serif"; src: url("/assets/fonts/instrument-serif-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Instrument Serif"; src: url("/assets/fonts/instrument-serif-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: "Caveat"; src: url("/assets/fonts/caveat-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Caveat"; src: url("/assets/fonts/caveat-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-display: swap; }
 @font-face { font-family: "Hanken Grotesk"; src: url("/assets/fonts/hanken-grotesk-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Hanken Grotesk"; src: url("/assets/fonts/hanken-grotesk-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 @font-face { font-family: "Hanken Grotesk"; src: url("/assets/fonts/hanken-grotesk-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
@@ -97,12 +97,12 @@ em { font-style: italic; }
 .hero h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(46px, 8.056vw, 116px); line-height: 1.04; letter-spacing: -.03em; }
 .hero h1 em { color: var(--red); }
 /* The handwritten "(ish)" sits above the gap between the words, with a caret pointing in */
-.hero h1 { padding-top: .42em; font-size: clamp(46px, 9vw, 132px); }
+.hero h1 { padding-top: .55em; font-size: clamp(46px, 9vw, 132px); }
 .ish { position: relative; display: inline-block; width: .22em; height: 1em; vertical-align: baseline; color: var(--red); }
-.ish-word { position: absolute; left: 50%; bottom: 1.75em; transform: translateX(-50%) rotate(-4deg); font-family: "Caveat", cursive; font-weight: 500; font-size: .52em; letter-spacing: 0; line-height: 1; white-space: nowrap; }
+.ish-word { position: absolute; left: 50%; bottom: 1.3em; transform: translateX(-50%) rotate(-4deg); font-family: "Caveat", cursive; font-weight: 700; font-size: .68em; letter-spacing: 0; line-height: 1; white-space: nowrap; }
 .ish-m { display: none; }
-.ish-m em { font-size: .93em; color: var(--red); }
-.ish-caret { position: absolute; left: 50%; bottom: -.1em; width: .16em; height: .16em; transform: translateX(-50%); }
+.ish-m em { font-size: 1em; color: var(--red); }
+.ish-caret { position: absolute; left: 50%; bottom: -.12em; width: .2em; height: .2em; transform: translateX(-50%); }
 .hero-body { display: flex; flex-direction: column; gap: 28px; max-width: 620px; }
 .hero-sub { max-width: 520px; font-size: 20px; line-height: 1.5; text-shadow: 0 0 8px var(--bone), 0 0 16px var(--bone); }
 .hero-cta { display: flex; align-items: center; gap: 24px; }

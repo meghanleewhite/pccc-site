@@ -27,7 +27,6 @@ Search the project for `[` to find them all.
 | `[SURVEYMONKEY LINK]` | index.html (survey button) | The live survey URL |
 | `[SEASON 2027]` | index.html (survey copy) | When findings will be published |
 | `[EMAIL]` | index.html (join + footer, 3 spots) | The public contact email |
-| `[LINKEDIN LINK]` | index.html (footer) | The LinkedIn page URL |
 
 Also confirm the survey tool is set to not collect IP addresses. The FAQ promises it.
 

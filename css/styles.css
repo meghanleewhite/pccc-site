@@ -264,7 +264,7 @@ em { font-style: italic; }
   .gap .source { font-size: 12px; }
 
   /* Mission + carousel */
-  .mission-grid { display: flex; flex-direction: column; gap: 22px; }
+  .mission-grid { display: flex; flex-direction: column; gap: 28px; padding-top: 72px; }
   .mission-intro { gap: 22px; }
   .mission-intro > p:not(.kicker) { font-size: 17px; }
   .pillars-wrap { width: 100%; }

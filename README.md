@@ -45,3 +45,7 @@ Then open http://localhost:8000.
 Hosted on Cloudflare Pages, connected to this repo. Every push to `main` deploys automatically.
 
 Cloudflare settings: framework preset **None**, build command **empty**, output directory **/**.
+
+## Caching
+
+Images and fonts are cached for a year. If you replace an image, give the new file a new name (e.g. `-v3`) and update the HTML, or returning visitors will keep seeing the old one. CSS and JS always revalidate.

@@ -25,8 +25,32 @@
     });
   }
 
-  // ---------- Frosted header once the page scrolls ----------
+  // ---------- Always open at the top on refresh ----------
+  // Stops the browser restoring an old scroll position (e.g. the founder section).
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+  // ---------- Fixed header: keep the page offset equal to its real height ----------
   var header = document.querySelector('.site-header');
+  var setHeaderHeight = function () {
+    if (header) document.documentElement.style.setProperty('--hh', header.offsetHeight + 'px');
+  };
+  setHeaderHeight();
+  window.addEventListener('resize', setHeaderHeight);
+  window.addEventListener('load', setHeaderHeight);
+
+  // ---------- In-page links scroll without adding #section to the URL ----------
+  // So a refresh or a shared link opens at the top of the page.
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    var id = link.getAttribute('href').slice(1);
+    var target = id ? document.getElementById(id) : null;
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+  });
+
+  // ---------- Frosted header once the page scrolls ----------
   if (header) {
     var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
     onScroll();

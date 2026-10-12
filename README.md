@@ -25,7 +25,6 @@ Search the project for `[` to find them all.
 | Placeholder | Where | Replace with |
 |---|---|---|
 | `[SURVEYMONKEY LINK]` | index.html (survey button) | The live survey URL |
-| `[SEASON 2027]` | index.html (survey copy) | When findings will be published |
 | `[EMAIL]` | index.html (join + footer, 3 spots) | The public contact email |
 
 Also confirm the survey tool is set to not collect IP addresses. The FAQ promises it.

@@ -82,6 +82,8 @@ em { font-style: italic; }
 /* ---------- 1 Hero ---------- */
 .hero { position: relative; overflow: hidden; isolation: isolate; }
 .hero .blob { --blur: 140px; }
+/* Beige band at the bottom so the hero doesn't bleed into the next section */
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 160px; z-index: 0; pointer-events: none; background: linear-gradient(to bottom, rgba(241,235,223,0), var(--bone) 85%); }
 .hero-art { position: absolute; right: 0; top: 10.5vw; width: 64.583vw; aspect-ratio: 3 / 2; }
 .hero-art img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 34%, rgba(0,0,0,.35) 46%, #000 64%), linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.4) 12%, #000 30%, #000 82%, transparent 100%);

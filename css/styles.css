@@ -101,7 +101,7 @@ em { font-style: italic; }
 .ish { position: relative; display: inline-block; width: .22em; height: 1em; vertical-align: baseline; color: var(--red); }
 .ish-word { position: absolute; left: 50%; bottom: 1.3em; transform: translateX(-50%) rotate(-4deg); font-family: "Caveat", cursive; font-weight: 700; font-size: .68em; letter-spacing: 0; line-height: 1; white-space: nowrap; }
 .ish-m { display: none; }
-.ish-m em { font-size: 1em; color: var(--red); }
+.ish-m em { display: inline-block; font-family: "Caveat", cursive; font-style: normal; font-weight: 700; font-size: .8em; letter-spacing: 0; color: var(--red); transform: rotate(-5deg) translateY(-.1em); }
 .ish-caret { position: absolute; left: 50%; bottom: -.12em; width: .2em; height: .2em; transform: translateX(-50%); }
 .hero-body { display: flex; flex-direction: column; gap: 28px; max-width: 620px; }
 .hero-sub { max-width: 520px; font-size: 20px; line-height: 1.5; text-shadow: 0 0 8px var(--bone), 0 0 16px var(--bone); }

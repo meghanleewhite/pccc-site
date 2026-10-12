@@ -100,6 +100,8 @@ em { font-style: italic; }
 .hero h1 { padding-top: .42em; font-size: clamp(46px, 9vw, 132px); }
 .ish { position: relative; display: inline-block; width: .22em; height: 1em; vertical-align: baseline; color: var(--red); }
 .ish-word { position: absolute; left: 50%; bottom: 1.75em; transform: translateX(-50%) rotate(-4deg); font-family: "Caveat", cursive; font-weight: 500; font-size: .52em; letter-spacing: 0; line-height: 1; white-space: nowrap; }
+.ish-m { display: none; }
+.ish-m em { font-size: .93em; color: var(--red); }
 .ish-caret { position: absolute; left: 50%; bottom: -.1em; width: .16em; height: .16em; transform: translateX(-50%); }
 .hero-body { display: flex; flex-direction: column; gap: 28px; max-width: 620px; }
 .hero-sub { max-width: 520px; font-size: 20px; line-height: 1.5; text-shadow: 0 0 8px var(--bone), 0 0 16px var(--bone); }
@@ -266,10 +268,9 @@ em { font-style: italic; }
   .hero .blob { --blur: 70px; opacity: calc(var(--o) * .55); }
   .hero-inner { order: 1; padding-top: 40px; padding-bottom: 0; gap: 22px; }
   .hero-eyebrow { display: none; }
-  .hero h1 { font-size: clamp(56px, 17vw, 88px); line-height: 1; letter-spacing: -.025em; padding-top: .3em; }
-  .ish { width: 0; }
-  .ish-word { left: .05em; bottom: 1.6em; transform: rotate(-4deg); }
-  .ish-caret { display: none; }
+  .hero h1 { font-size: clamp(52px, 16vw, 88px); line-height: 1; letter-spacing: -.025em; padding-top: .1em; }
+  .ish { display: none; }
+  .ish-m { display: inline; }
   .hero-body { gap: 22px; max-width: none; }
   .hero-sub { font-size: 17px; text-shadow: none; }
   .hero-cta { flex-direction: column; align-items: stretch; gap: 10px; }

@@ -28,7 +28,6 @@ Search the project for `[` to find them all.
 | `[SEASON 2027]` | index.html (survey copy) | When findings will be published |
 | `[EMAIL]` | index.html (join + footer, 3 spots) | The public contact email |
 | `[LINKEDIN LINK]` | index.html (footer) | The LinkedIn page URL |
-| `[DOMAIN]` | index.html (`og:url`, `og:image`) | The real domain, e.g. `pccc.ca` |
 
 Also confirm the survey tool is set to not collect IP addresses. The FAQ promises it.
 

@@ -247,7 +247,7 @@ em { font-style: italic; }
   .hero-art { position: relative; order: 2; top: auto; width: 100%; aspect-ratio: auto; height: 210px; margin-top: 8px; margin-bottom: 28px; }
   .hero-art img { object-position: 60% center; mix-blend-mode: multiply; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 30%, #000 85%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0%, #000 30%, #000 85%, transparent 100%); -webkit-mask-composite: source-over; mask-composite: add; }
   .hero-art-fade { display: none; }
-  .hero .blob { --blur: 70px; }
+  .hero .blob { --blur: 70px; opacity: calc(var(--o) * .55); }
   .hero-inner { order: 1; padding-top: 40px; padding-bottom: 0; gap: 22px; }
   .hero-eyebrow { display: none; }
   .hero h1 { font-size: clamp(40px, 11.8vw, 64px); line-height: 1.06; letter-spacing: -.025em; }

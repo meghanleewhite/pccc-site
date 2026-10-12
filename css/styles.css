@@ -224,7 +224,7 @@ em { font-style: italic; }
 .wordmark-lg { font-size: 30px; color: var(--bone); }
 .tagline { font-family: var(--serif); font-size: 40px; line-height: 1; }
 .tagline span { color: var(--red-bright); }
-.footer-cols { display: grid; grid-template-columns: repeat(3, auto); gap: 64px; font-size: 16px; }
+.footer-cols { display: grid; grid-template-columns: repeat(2, auto); gap: 64px; font-size: 16px; }
 .footer-cols > div { display: flex; flex-direction: column; gap: 12px; }
 .footer-label { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--stone); }
 .footer-bottom { margin-top: 64px; border-top: 1px solid #3A3A3A; padding-top: 24px; font-size: 14px; color: var(--stone); }

@@ -225,16 +225,16 @@ em { font-style: italic; }
 @media (max-width: 899px) {
   :root { --blur: 80px; }
   body { font-size: 16px; }
-  html { --hh: 60px; }
+  html { --hh: 76px; }
   .m-only { display: initial; }
   .m-br { display: inline; }
   .d-br { display: none; }
   .d-only { display: none; }
 
   /* Header + menu */
-  .header-inner { padding-top: 10px; padding-bottom: 10px; gap: 12px; }
-  .wordmark { font-size: 16px; line-height: 1.08; }
-  .menu-btn { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: none; border: 1px solid var(--bone); color: var(--bone); cursor: pointer; padding: 0; }
+  .header-inner { padding-top: 16px; padding-bottom: 16px; gap: 12px; }
+  .wordmark { font-size: 17px; line-height: 1.08; }
+  .menu-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: none; border: 1px solid var(--bone); color: var(--bone); cursor: pointer; padding: 0; }
   .menu-btn .icon-close { display: none; }
   .menu-btn[aria-expanded="true"] .icon-open { display: none; }
   .menu-btn[aria-expanded="true"] .icon-close { display: block; }

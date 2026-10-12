@@ -85,7 +85,6 @@ em { font-style: italic; }
 
 /* ---------- 1 Hero ---------- */
 .hero { position: relative; overflow: hidden; isolation: isolate; }
-.hero .blob { --blur: 140px; }
 /* Beige band at the bottom so the hero doesn't bleed into the next section */
 .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 160px; z-index: 0; pointer-events: none; background: linear-gradient(to bottom, rgba(241,235,223,0), var(--bone) 85%); }
 .hero-art { position: absolute; right: 0; top: 10.5vw; width: 64.583vw; aspect-ratio: 3 / 2; }
@@ -268,7 +267,6 @@ em { font-style: italic; }
   .hero-art { position: relative; order: 2; top: auto; width: 100%; aspect-ratio: auto; height: 210px; margin-top: 8px; margin-bottom: 28px; }
   .hero-art img { object-position: 60% center; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 30%, #000 85%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0%, #000 30%, #000 85%, transparent 100%); -webkit-mask-composite: source-over; mask-composite: add; }
   .hero-art-fade { display: none; }
-  .hero .blob { --blur: 70px; opacity: calc(var(--o) * .55); }
   .hero-inner { order: 1; padding-top: 40px; padding-bottom: 0; gap: 22px; }
   .hero-eyebrow { display: none; }
   .hero h1 { font-size: clamp(52px, 16vw, 88px); line-height: 1; letter-spacing: -.025em; padding-top: .1em; }

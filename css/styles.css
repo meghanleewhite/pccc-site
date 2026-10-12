@@ -197,6 +197,7 @@ em { font-style: italic; }
 .join-side > p { font-size: 19px; line-height: 1.5; }
 .tags { display: flex; flex-wrap: wrap; gap: 10px; }
 .tags li { border: 1px solid var(--ink); padding: 10px 16px; font-size: 15px; font-weight: 500; line-height: 1.2; }
+.join-cta { align-self: flex-start; font-size: 17px; padding: 18px 28px; }
 .endorse { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--ink); padding-top: 22px; }
 .endorse-title { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .endorse a { font-size: 17px; font-weight: 600; text-underline-offset: 5px; }
@@ -337,6 +338,7 @@ em { font-style: italic; }
   .join-side > p { font-size: 17px; }
   .tags { gap: 8px; }
   .tags li { font-size: 14px; padding: 9px 14px; }
+  .join-cta { align-self: stretch; text-align: center; }
 
   /* Footer */
   .site-footer { padding: 56px 0 32px; }

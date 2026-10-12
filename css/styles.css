@@ -30,7 +30,7 @@
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 90px; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 76px; }
 body { margin: 0; background: var(--bone); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.5; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 h1, h2, h3, p, ul, ol, blockquote, figure { margin: 0; }
 ul, ol { padding: 0; list-style: none; }
@@ -68,14 +68,14 @@ em { font-style: italic; }
    main.js adds .is-scrolled and it turns to frosted glass. */
 .site-header { position: sticky; top: 0; z-index: 50; background: #3A3835; color: var(--bone); border-bottom: 1px solid #3A3835; transition: background-color .35s ease, border-color .35s ease; }
 .site-header.is-scrolled { background: rgba(58,56,53,.6); border-bottom-color: rgba(241,235,223,.1); -webkit-backdrop-filter: blur(20px) saturate(1.4); backdrop-filter: blur(20px) saturate(1.4); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 32px; padding-bottom: 32px; }
-.wordmark { font-size: 24px; font-weight: 800; letter-spacing: -.01em; line-height: 1.05; text-decoration: none; color: var(--ink); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 16px; padding-bottom: 16px; }
+.wordmark { font-size: 20px; font-weight: 800; letter-spacing: -.01em; line-height: 1.05; text-decoration: none; color: var(--ink); }
 .wordmark:hover { color: var(--ink); }
 .site-header .wordmark, .site-header .wordmark:hover { color: var(--bone); }
 .site-nav { display: flex; align-items: center; gap: 36px; font-size: 15px; font-weight: 500; }
 .site-nav a { text-decoration: none; color: var(--bone); }
 .site-nav a:hover { color: var(--red-bright); }
-.site-nav .nav-cta { background: var(--red); color: var(--bone); padding: 14px 22px; }
+.site-nav .nav-cta { background: var(--red); color: var(--bone); padding: 12px 20px; }
 .site-nav .nav-cta:hover { background: #A92A16; color: var(--bone); }
 .menu-btn { display: none; }
 
@@ -221,15 +221,15 @@ em { font-style: italic; }
 @media (max-width: 899px) {
   :root { --blur: 80px; }
   body { font-size: 16px; }
-  html { scroll-padding-top: 76px; }
+  html { scroll-padding-top: 60px; }
   .m-only { display: initial; }
   .m-br { display: inline; }
   .d-br { display: none; }
 
   /* Header + menu */
-  .header-inner { padding-top: 14px; padding-bottom: 14px; gap: 12px; }
-  .wordmark { font-size: 18px; line-height: 1.08; }
-  .menu-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: none; border: 1px solid var(--bone); color: var(--bone); cursor: pointer; padding: 0; }
+  .header-inner { padding-top: 10px; padding-bottom: 10px; gap: 12px; }
+  .wordmark { font-size: 16px; line-height: 1.08; }
+  .menu-btn { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: none; border: 1px solid var(--bone); color: var(--bone); cursor: pointer; padding: 0; }
   .menu-btn .icon-close { display: none; }
   .menu-btn[aria-expanded="true"] .icon-open { display: none; }
   .menu-btn[aria-expanded="true"] .icon-close { display: block; }

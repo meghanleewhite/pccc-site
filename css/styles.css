@@ -51,8 +51,11 @@ em { font-style: italic; }
 .kicker-dark { color: #A92A16; }
 .source { font-size: 13px; line-height: 1.5; color: var(--muted); }
 
-.btn { display: inline-block; text-decoration: none; font-weight: 600; font-size: 18px; line-height: 1.2; padding: 22px 36px; transition: background-color .2s ease, transform .2s ease; }
+.btn { display: inline-block; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 18px; line-height: 1.2; padding: 20px 34px; transition: background-color .2s ease, transform .2s ease; }
 .btn-red { background: var(--red); color: var(--bone); }
+/* On light backgrounds the main buttons are black; red stays for dark sections */
+.btn-ink { background: var(--ink); color: var(--bone); }
+.btn-ink:hover { background: var(--red); color: var(--bone); }
 .btn-red:hover { background: #A92A16; color: var(--bone); }
 .btn-block { display: block; text-align: center; }
 
@@ -76,7 +79,7 @@ em { font-style: italic; }
 .site-nav { display: flex; align-items: center; gap: 36px; font-size: 15px; font-weight: 500; }
 .site-nav a { text-decoration: none; color: var(--bone); }
 .site-nav a:hover { color: var(--red-bright); }
-.site-nav .nav-cta { background: var(--red); color: var(--bone); padding: 12px 20px; }
+.site-nav .nav-cta { background: var(--red); color: var(--bone); padding: 12px 22px; border-radius: 999px; }
 .site-nav .nav-cta:hover { background: #A92A16; color: var(--bone); }
 .menu-btn { display: none; }
 
@@ -273,8 +276,8 @@ em { font-style: italic; }
   .ish-m { display: inline; }
   .hero-body { gap: 22px; max-width: none; }
   .hero-sub { font-size: 17px; text-shadow: none; }
-  .hero-cta { flex-direction: column; align-items: stretch; gap: 10px; }
-  .hero-cta .btn { text-align: center; font-size: 17px; padding: 18px 20px; }
+  .hero-cta { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .hero-cta .btn { font-size: 17px; padding: 16px 28px; }
   .hero-note { font-size: 14px; }
 
   /* Gap */
@@ -360,7 +363,7 @@ em { font-style: italic; }
   .join-side > p { font-size: 17px; }
   .tags { gap: 8px; }
   .tags li { font-size: 14px; padding: 9px 14px; }
-  .join-cta { align-self: stretch; text-align: center; }
+  .join-cta { align-self: flex-start; }
 
   /* Survey nudge: full-width bar on phones */
   .nudge { left: 0; right: 0; bottom: 0; width: auto; grid-template-columns: 1fr auto auto; gap: 12px; padding: 12px 12px 12px 20px; padding-bottom: calc(12px + env(safe-area-inset-bottom)); box-shadow: 0 -8px 30px rgba(20,20,20,.2); }

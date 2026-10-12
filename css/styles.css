@@ -66,21 +66,21 @@ em { font-style: italic; }
 /* ---------- Header ----------
    Solid black at the top of the page. Once the page scrolls,
    main.js adds .is-scrolled and it turns to frosted glass. */
-.site-header { position: sticky; top: 0; z-index: 50; background: var(--ink); color: var(--bone); border-bottom: 1px solid var(--ink); transition: background-color .35s ease, border-color .35s ease; }
-.site-header.is-scrolled { background: rgba(20,20,20,.84); border-bottom-color: rgba(241,235,223,.1); -webkit-backdrop-filter: blur(16px) saturate(1.3); backdrop-filter: blur(16px) saturate(1.3); }
+.site-header { position: sticky; top: 0; z-index: 50; background: #EFE6D8; color: var(--ink); border-bottom: 1px solid var(--ink); transition: background-color .35s ease, border-color .35s ease; }
+.site-header.is-scrolled { background: rgba(239,230,216,.72); border-bottom-color: rgba(20,20,20,.2); -webkit-backdrop-filter: blur(16px) saturate(1.3); backdrop-filter: blur(16px) saturate(1.3); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 32px; padding-bottom: 32px; }
 .wordmark { font-size: 24px; font-weight: 800; letter-spacing: -.01em; line-height: 1.05; text-decoration: none; color: var(--ink); }
 .wordmark:hover { color: var(--ink); }
-.site-header .wordmark, .site-header .wordmark:hover { color: var(--bone); }
+.site-header .wordmark, .site-header .wordmark:hover { color: var(--ink); }
 .site-nav { display: flex; align-items: center; gap: 36px; font-size: 15px; font-weight: 500; }
-.site-nav a { text-decoration: none; color: var(--bone); }
-.site-nav a:hover { color: var(--red-bright); }
-.site-nav .nav-cta { background: var(--red); color: var(--bone); padding: 14px 22px; }
-.site-nav .nav-cta:hover { background: #A92A16; color: var(--bone); }
+.site-nav a { text-decoration: none; color: var(--ink); }
+.site-nav a:hover { color: var(--red); }
+.site-nav .nav-cta { background: var(--ink); color: var(--bone); padding: 14px 22px; }
+.site-nav .nav-cta:hover { background: var(--red); color: var(--bone); }
 .menu-btn { display: none; }
 
 /* ---------- 1 Hero ---------- */
-.hero { position: relative; overflow: hidden; isolation: isolate; }
+.hero { position: relative; overflow: hidden; isolation: isolate; background: #EFE6D8; }
 .hero .blob { --blur: 140px; }
 .hero-art { position: absolute; right: 0; top: 10.5vw; width: 64.583vw; aspect-ratio: 3 / 2; }
 .hero-art img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply;
@@ -229,13 +229,13 @@ em { font-style: italic; }
   /* Header + menu */
   .header-inner { padding-top: 14px; padding-bottom: 14px; gap: 12px; }
   .wordmark { font-size: 18px; line-height: 1.08; }
-  .menu-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: none; border: 1px solid var(--bone); color: var(--bone); cursor: pointer; padding: 0; }
+  .menu-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: none; border: 1px solid var(--ink); color: var(--ink); cursor: pointer; padding: 0; }
   .menu-btn .icon-close { display: none; }
   .menu-btn[aria-expanded="true"] .icon-open { display: none; }
   .menu-btn[aria-expanded="true"] .icon-close { display: block; }
-  .site-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; background: var(--ink); border-bottom: 1px solid var(--ink); padding: 8px 20px 20px; font-size: 18px; font-weight: 600; }
+  .site-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; background: #EFE6D8; border-bottom: 1px solid var(--ink); padding: 8px 20px 20px; font-size: 18px; font-weight: 600; }
   .site-nav.is-open { display: flex; }
-  .site-nav a { padding: 16px 0; border-bottom: 1px solid rgba(241,235,223,.15); }
+  .site-nav a { padding: 16px 0; border-bottom: 1px solid rgba(20,20,20,.15); }
   .site-nav .nav-cta { margin-top: 16px; text-align: center; padding: 18px; border: 0; background: var(--red); }
 
   /* Hero */

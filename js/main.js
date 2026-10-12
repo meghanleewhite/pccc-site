@@ -25,6 +25,14 @@
     });
   }
 
+  // ---------- Frosted header once the page scrolls ----------
+  var header = document.querySelector('.site-header');
+  if (header) {
+    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
   // ---------- FAQ accordion (one open at a time) ----------
   var items = Array.prototype.slice.call(document.querySelectorAll('.acc-item'));
   items.forEach(function (item) {

@@ -73,7 +73,11 @@ em { font-style: italic; }
 .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; -webkit-transform: translateZ(0); transform: translateZ(0); background: #343230; color: var(--bone); border-bottom: 1px solid #343230; transition: background-color .35s ease, border-color .35s ease; }
 .site-header.is-scrolled { background: rgba(52,50,48,.6); border-bottom-color: rgba(241,235,223,.1); -webkit-backdrop-filter: blur(20px) saturate(1.4); backdrop-filter: blur(20px) saturate(1.4); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 24px; padding-bottom: 24px; }
-.wordmark { font-size: 20px; font-weight: 800; letter-spacing: -.01em; line-height: 1.05; text-decoration: none; color: var(--ink); }
+/* Wordmark: matches the Instagram / LinkedIn logo */
+.wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; text-decoration: none; color: var(--ink); line-height: 1; }
+.wm-serif { font-family: var(--serif); font-weight: 400; font-size: 28px; line-height: .95; letter-spacing: -.01em; }
+.wm-rule { display: block; width: 22px; height: 2px; background: var(--red); margin: 7px 0 6px; }
+.wm-caps { font-family: var(--sans); font-weight: 800; font-size: 9.5px; letter-spacing: .24em; text-transform: uppercase; line-height: 1.35; }
 .wordmark:hover { color: var(--ink); }
 .site-header .wordmark, .site-header .wordmark:hover { color: var(--bone); }
 .site-nav { display: flex; align-items: center; gap: 36px; font-size: 15px; font-weight: 500; }
@@ -221,8 +225,11 @@ em { font-style: italic; }
 .site-footer a:hover { color: var(--red-bright); }
 .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 48px; }
 .footer-brand { display: flex; flex-direction: column; gap: 20px; }
-.wordmark-lg { font-size: 30px; color: var(--bone); }
-.tagline { font-family: var(--serif); font-size: 40px; line-height: 1; }
+.wordmark-lg { color: var(--bone); }
+.wordmark-lg .wm-serif { font-size: 52px; }
+.wordmark-lg .wm-rule { width: 34px; height: 3px; margin: 14px 0 12px; background: var(--red-bright); }
+.wordmark-lg .wm-caps { font-size: 13px; }
+.tagline { font-family: var(--serif); font-size: 40px; line-height: 1; margin-top: 12px; }
 .tagline span { color: var(--red-bright); }
 .footer-cols { display: grid; grid-template-columns: repeat(2, auto); gap: 64px; font-size: 16px; }
 .footer-cols > div { display: flex; flex-direction: column; gap: 12px; }
@@ -252,7 +259,9 @@ em { font-style: italic; }
 
   /* Header + menu */
   .header-inner { padding-top: 16px; padding-bottom: 16px; gap: 12px; }
-  .wordmark { font-size: 17px; line-height: 1.08; }
+  .wm-serif { font-size: 24px; }
+  .wm-rule { width: 18px; margin: 5px 0 5px; }
+  .wm-caps { font-size: 8.5px; letter-spacing: .22em; }
   .menu-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: none; border: 1px solid var(--bone); color: var(--bone); cursor: pointer; padding: 0; }
   .menu-btn .icon-close { display: none; }
   .menu-btn[aria-expanded="true"] .icon-open { display: none; }
@@ -372,7 +381,8 @@ em { font-style: italic; }
   /* Footer */
   .site-footer { padding: 56px 0 32px; }
   .footer-top { flex-direction: column; gap: 40px; }
-  .wordmark-lg { font-size: 24px; }
+  .wordmark-lg .wm-serif { font-size: 44px; }
+  .wordmark-lg .wm-caps { font-size: 12px; }
   .tagline { font-size: 32px; }
   .footer-cols { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
   .footer-bottom { margin-top: 40px; font-size: 13px; }
